@@ -47,9 +47,9 @@ def another():
 
 while True:
     new_temp = 0
-    temp = float(input("temp: "))
-    start_unit = input("starting unit: ")
-    convert = input("new unit: ")
+    temp = float(input("Please enter the numeric value of the starting temperature: "))
+    start_unit = input("What is the original unit of measurement? ")
+    convert = input(" ")
 
 
     output = converter(temp, start_unit, convert)
