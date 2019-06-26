@@ -1,8 +1,6 @@
 '''
 Simple temperature converter written in Python3. Handles conversions between Fahrenheit, Celcius, Kelvin, and Rankine.
 '''
-# global variables
-
 
 # converter function
 def converter(a,b,c):
@@ -46,6 +44,7 @@ def another():
     return input("Would you like to convert another temperature? (Y/N): ").lower().startswith('y')
 
 
+
 while True:
     new_temp = 0
     temp = float(input("temp: "))
@@ -56,7 +55,7 @@ while True:
     output = converter(temp, start_unit, convert)
     print(str(output))
 
-  
+
     
     if not another():
         break
