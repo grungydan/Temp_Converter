@@ -3,7 +3,7 @@ Simple temperature converter written in Python3. Handles conversions between Fah
 '''
 
 # converter function
-def converter(a,b,c):
+def converter(*args):
     if start_unit[0] == 'f':
         if convert == 'c':
             new_temp = (temp - 32) * 5/9
@@ -49,7 +49,7 @@ while True:
     new_temp = 0
     temp = float(input("Please enter the numeric value of the starting temperature: "))
     start_unit = input("What is the original unit of measurement? ")
-    convert = input(" ")
+    convert = input("To which unit would you like to convert? ")
 
 
     output = converter(temp, start_unit, convert)
